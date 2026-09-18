@@ -1,0 +1,108 @@
+:root {
+    --pink: #ff77ae;
+    --ink: #281522;
+    --white: #fffafc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: clamp(1.25rem, 4vw, 3.5rem);
+    background: var(--pink);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+}
+
+.content {
+    width: min(100%, 72rem);
+    margin: auto;
+}
+
+h1 {
+    margin: 0 0 clamp(2rem, 6vw, 4rem);
+    color: var(--white);
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: clamp(3.5rem, 12vw, 9rem);
+    letter-spacing: 0.06em;
+    line-height: 0.9;
+    text-align: center;
+    text-shadow: 0.06em 0.06em 0 var(--ink);
+}
+
+.shops {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: clamp(1rem, 5vw, 4rem);
+}
+
+.shop {
+    display: flex;
+    min-width: 0;
+    flex: 1 1 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.shop img {
+    display: block;
+    width: 100%;
+    height: clamp(10rem, 25vw, 18rem);
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 2px solid var(--ink);
+    border-radius: 1.25rem;
+    background: var(--white);
+    box-shadow: 0.5rem 0.5rem 0 var(--ink);
+    object-fit: contain;
+}
+
+.shop a {
+    color: var(--white);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-underline-offset: 0.25em;
+}
+
+.shop a:hover {
+    color: var(--ink);
+}
+
+.shop a:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 0.35rem;
+}
+
+hr {
+    width: 100%;
+    margin: clamp(2.5rem, 7vw, 5rem) 0 1.25rem;
+    border: 0;
+    border-top: 2px solid var(--ink);
+}
+
+footer {
+    color: var(--white);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: right;
+}

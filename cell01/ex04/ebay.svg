@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title">
+    <title id="title">eBay</title>
+    <rect width="800" height="450" rx="36" fill="#fffafc"/>
+    <text x="400" y="270" font-family="Arial, Helvetica, sans-serif" font-size="154" font-weight="700" letter-spacing="-12" text-anchor="middle">
+        <tspan fill="#e53238">e</tspan><tspan fill="#0064d2">B</tspan><tspan fill="#f5af02">a</tspan><tspan fill="#86b817">y</tspan>
+    </text>
+</svg>
