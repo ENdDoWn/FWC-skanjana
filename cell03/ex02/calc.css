@@ -1,0 +1,9 @@
+body {
+    background-color: #e8f0ff;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin: 30px;
+}
